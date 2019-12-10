@@ -20,7 +20,7 @@ To build the project we use [CMake](https://cmake.org/). Currently, we are using
 1. **ZLib**: Initialize the zlib sub-mocule and compile the install project.
 2. **LibPng**: Initialize the libpng sub-mocule and compile the install project. This project depends on zlib.
 3. **Create and compile the renderer**: Finally build the Software Renderer project and compite. You will have to setup CMAKE_PREFIX_PATH to the path where libpng is installed. To build you can use this command:
-4. To run the program you will have to have the zlib share library on path, or copy it along the executable.
+4. If you link against the shared version of libpng and/or zlib, then you will have to add those share libraries to system path, or copy them along the executable.
 
 ```bash
 cmake -S . -B build/
