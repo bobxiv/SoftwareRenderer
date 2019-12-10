@@ -945,13 +945,13 @@ int main()
 	SoftRenderer::PlaneMesh(MyRenderer.m_pVertexBuffer, MyRenderer.m_VBCount, MyRenderer.m_pIndexBuffer, MyRenderer.m_IBCount,
 			MyRenderer.m_Winding);
 
-	SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\Resources\\Chessboard_Texture_by_Sveinjo.png");
-	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\Resources\\cross.png");
-	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\Resources\\rock.bmp");
-	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\Resources\\Plane01DiffuseMap.png");
-	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\Resources\\grass.ppm");
-	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\Resources\\azul.png");
-	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\Resources\\coso.bmp");
+	SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\..\\resources\\Chessboard_Texture_by_Sveinjo.png");
+	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\..\\resources\\cross.png");
+	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\..\\resources\\rock.bmp");
+	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\..\\resources\\Plane01DiffuseMap.png");
+	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\..\\resources\\grass.ppm");
+	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\..\\resources\\azul.png");
+	//SoftRenderer::Texture2D& rock = MyRenderer.CreateTexture2D("..\\..\\resources\\coso.bmp");
 	MyRenderer.m_CurrentTextureID = rock.GetIDTexture();
 
 	/*
@@ -1110,7 +1110,7 @@ int main()
 	std::cerr<<"Comprobando caracteristicas del procesador:"<<std::endl<<std::endl;
 	_p_info info;
 
-	_cpuid(&info);
+	//_cpuid(&info);
 
 	printf("v_name:\t\t%s\n", info.v_name);
 	printf("model:\t\t%s\n", info.model_name);
